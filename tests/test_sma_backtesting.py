@@ -1,5 +1,5 @@
 import unittest
-from sma_backtesting import backtest
+from sma_backtesting.sma_backtesting import backtest
 
 class TestSMABacktest(unittest.TestCase):
     def test_backtest_returns_dataframe(self):

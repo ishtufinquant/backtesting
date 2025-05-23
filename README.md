@@ -1,17 +1,21 @@
 # Simple Moving Average (SMA) Backtesting Module
 
-This Python script performs backtesting on a single-stock trading strategy using **Simple Moving Averages (SMA)**.
+This Python script performs backtesting on a single-stock trading strategy using Simple Moving Averages (SMA).
+
+---
 
 ## 📈 Strategy
-
-- Buy signal: When short-term SMA crosses above long-term SMA.
-- Sell signal: When short-term SMA crosses below long-term SMA.
+- **Buy signal**: When short-term SMA crosses **above** long-term SMA.
+- **Sell signal**: When short-term SMA crosses **below** long-term SMA.
 - Trades are executed on signal days.
 
-## 📊 Features
+---
 
-- Backtests SMA crossover strategy on any stock using `yfinance`.
-- Tracks buy/sell dates, prices, and profit per trade.
+## 📊 Features
+- Backtests SMA crossover strategy using `yfinance`.
+- Tracks:
+  - Buy/sell dates and prices
+  - Profit per trade
 - Calculates:
   - Total trades
   - Win rate
@@ -22,10 +26,12 @@ This Python script performs backtesting on a single-stock trading strategy using
   - SMA lines
   - Cumulative profit over time
 
+---
+
 ## 🛠️ Usage
 
 ```python
-from backtesting_sma import backtest
+from sma_backtesting.sma_backtesting import backtest
 
 results = backtest(
     ticker='AAPL',
@@ -36,22 +42,12 @@ results = backtest(
     sma_long=50,
     plot=True
 )
-Returns a DataFrame of trades and basic statistics.
+```
+---
 
-📦 Requirements
-yfinance
+## 📁 Output Sample
 
-pandas
-
-matplotlib
-
-Install with:
-
-nginx
-Copy
-Edit
-pip install yfinance pandas matplotlib
-📁 Output Sample
-Buy Date	Buy Price	Sell Date	Sell Price	Profit	Cumulative_Profit
-2024-05-16	178.65	2024-08-19	177.48	-1.17	-1.17
-2024-09-23	252.64	2025-02-07	338.59	85.95	84.78
+| Buy Date   | Buy Price | Sell Date  | Sell Price | Profit | Cumulative_Profit |
+|------------|-----------|------------|------------|--------|-------------------|
+| 2024-05-16 | 178.65    | 2024-08-19 | 177.48     | -1.17  | -1.17             |
+| 2024-09-23 | 252.64    | 2025-02-07 | 338.59     | 85.95  | 84.78             |
