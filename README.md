@@ -1,6 +1,6 @@
-# Simple Moving Average (SMA) Backtesting Module
+# SMA Strategy Backtesting with Python | Quantitative Trading Module
 
-This Python script performs backtesting on a single-stock trading strategy using Simple Moving Averages (SMA).
+This project provides a clean and modular backtesting engine for Simple Moving Average (SMA) crossover strategies using Python, Pandas, and yFinance. It simulates trades, tracks performance, and visualizes buy/sell points — ideal for traders, analysts, and quant developers.
 
 ---
 
