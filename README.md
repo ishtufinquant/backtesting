@@ -105,6 +105,19 @@ results = backtest(
     plot=True
 )
 ```
+---
+
+## 👤 Real-World Use Case (Client-Style)
+
+Suppose a client wants to analyze Apple's stock using a 20/50 SMA crossover strategy from Jan 2024 to Jan 2025.  
+They’re interested in:
+- When to buy/sell
+- Profit from each trade
+- Total performance
+- Visual validation with a chart
+
+This tool delivers all of that with a single function call using customizable parameters.  
+The results include a detailed trade log, performance metrics, and a plotted chart of buy/sell points.
 
 ---
 
@@ -146,9 +159,14 @@ MIT License
 
 ---
 
-**Feel free to add screenshots of your plots below for a more visual showcase!**
+## 📉 Example Chart (SMA Strategy)
+
+This chart shows the buy/sell points for AAPL based on the 20/50 SMA crossover strategy:
+
+![SMA Strategy on AAPL](assets/sma-chart-plot.png)
 
 ---
 
-**Contact:**  
+## 📞 Contact
+
 For custom strategy development or consulting, please contact me via this platform's messaging system.
